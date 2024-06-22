@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Assets/logo/Tab-Icon.png" sizes="30x30">
+    <title>SIGN IN NOW</title>
+    <link rel="stylesheet" href="https://use.typekit.net/example.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">Royal <span>Fitness</span></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+      
+
+        
+    </header>
+
+
+ <!-- Home Section -->
+
+    <section id="home" class="home">
+        <div class="home-content" data-aos="zoom-in">
+            <h3>Build Your</h3>
+            <h1>Dream Physique</h1>
+            <h3><span class="multiple-text"></span></h3>
+            <p>Lorem ipsum dolor sit, bus earum, aliquam ipsa repellat iusto esse laudantium animi vitae consectetur
+                obcaecati.</p>
+
+            <a href="#" class="btn">Sign up</a>
+        </div>
+
+        <div class="home-img" data-aos="zoom-in">
+            <img src="assets/hero.png" alt="HeroImage">
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--login
+
+
+-->
+    <div class="container">
+            <form action="/action_page.php">
+                <h1>WELCOME BACK TO THE WORLD OF </h1>
+                <div class="signin_logo">
+               
+                </div>
+                <div class="u">
+                    <label for="user">USERNAME OR EMAIL :</label>
+                    <input type="text" id="user" name="user" placeholder="Please Enter Your Username Or Email">
+                </div>
+                <div class="p">
+                    <label for="password">PASSWORD :</label>
+                    <input type="password" id="password" name="password" placeholder="Please Enter Your Password">
+                </div>
+                <div class="signup">
+                <p >DON'T HAVE AN ACCOUNT ? <a href="signup.html">SIGN UP NOW!</a></p>
+                </div>   
+                <button class="button" type="button" onclick="login()">LOG-IN</button>
+            </form>
+        </div>
+       
+        <div class="error-message" id="error-message"></div>
+        <script>
+            function displayErrorMessage(message) {
+                var errorMessage = document.getElementById("error-message");
+                errorMessage.innerText = message;
+                errorMessage.style.display = "block";
+            }
+            function login() {
+                var loginSuccessful = false;
+                if (!loginSuccessful) {
+                    displayErrorMessage("Incorrect username or password. Please try again.");
+                }
+            }
+        </script>
+         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+         <script src="js/script.js"></script>
+        
+        
+</body>
+</html>
